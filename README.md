@@ -29,9 +29,9 @@ This jailbreak is under development and in no way whatsoever intended for genera
  
  Just in case it isn't clear for everyone yet:
  <ul>
-  <li> THIS DOES NEED APPLE DEVELOPER ACCOUNT (Necause of the Multi Path entitlement used in multi_path).</li>
+  <li> THIS DOES NEED APPLE DEVELOPER ACCOUNT (Because of the Multi Path entitlement used in multi_path).</li>
   <li> I will swap the mtcp exploit with vfs once Ian Beer drops it. </li>
-  <li> THIS COMES "AS-IS". NO FORTHER SUPPORT SHOULD BE EXPECTED OR WILL BE GIVEN. USE AT YOUR OWN RISK!
+  <li> THIS COMES "AS-IS". NO FURTHER SUPPORT SHOULD BE EXPECTED OR WILL BE GIVEN. USE AT YOUR OWN RISK!
 </ul>
 
 ### New Team Members:
