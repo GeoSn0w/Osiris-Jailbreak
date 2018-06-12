@@ -26,6 +26,7 @@
 #include "offsets.h"
 #include "kmem.h"
 #include "QiLin.h"
+#include "fuckDropbear.h" //Shell
 
 extern char **environ;
 uint64_t evil;
@@ -62,7 +63,7 @@ uint64_t cached_task_self_addr = 0;
 uint64_t task_self_addr() {
     if (cached_task_self_addr == 0) {
         cached_task_self_addr = find_port_address(mach_task_self(), MACH_MSG_TYPE_COPY_SEND);
-        printf("task self: 0x%llx\n", cached_task_self_addr);
+        printf("[i] Task self: 0x%llx\n", cached_task_self_addr);
     }
     return cached_task_self_addr;
 }
@@ -1518,19 +1519,20 @@ int exploit() {
     // 0xFFFFFFF0074c5d08 for iPad mini 4 image.
     return 0;
 }
-int NukeAMFI(){
+int nukeSandBox(){
     // Got root?
     // TO ADD A NEW DEVICE SET THESE >> <<
     uint64_t kernel_base = dump_kernel(tfp0, 0xFFFFFFF0074c5d08);
     uint64_t kaslr = kernel_base + 0xFF8FFC000;
     initQiLin(tfp0, kernel_base);
-    // jtool -S on decompressed kernel
     setKernelSymbol("_kernproc",kernproc);
     setKernelSymbol("_rootvnode",rootvnode);
     setKernelSymbol("_vfs_rootnode",vfs_rootnode);
-    // now to patch the remaining goodness..
     ShaiHuludMe(0); //Sbox
     platformizeMe();
+    return 0;
+}
+int nukeAMFI(){
     printf("[i] Borrowing entitlements...\n");
     borrowEntitlementsFromDonor("/usr/bin/sysdiagnose","-u");
     sleep(3);
@@ -1547,56 +1549,32 @@ uint64_t get_KASLR_Slide(){
 uint tfp0_printout(){
     return tfp0; //Just return the task port. I use this on the UI.
 }
-int doAuxStuff(){
-    printf("[i] Performing auxiliary stuff...\n");
-    uint64_t kernel_base = dump_kernel(tfp0, 0xFFFFFFF0074c5d08);
-    uint64_t kaslr = kernel_base + 0xFF8FFC000;
-    uint64_t _rootvnode = rootvnode + kaslr + 0x88;
-    //rootfs_vnode->vnode_val+0xd8->node_data->data+0x70->flags
-    printf("rootvnode: %016llx\n", _rootvnode);
-    uint64_t rootfs_vnode = rk64(_rootvnode);
-    printf("rootfs_vnode: %016llx\n", rootfs_vnode);
-#define KSTRUCT_OFFSET_MOUNT_MNT_FLAG   0x70
-#define KSTRUCT_OFFSET_VNODE_V_UN       0xd8
-    uint64_t v_mount = rk64(rootfs_vnode + koffset(KSTRUCT_OFFSET_VNODE_V_UN));
-    // this is not valid
-    uint32_t v_flag = rk32(v_mount + koffset(KSTRUCT_OFFSET_MOUNT_MNT_FLAG) + 1);
-    printf("v_mount=0x%llx\n"
-           "v_flag_location=0x%llx\n"
-           "v_flag_value=0x%x\n", v_mount, v_mount + 0x70, v_flag);
-#define MNT_RDONLY  0x00000001  /* read only filesystem */
-#define MNT_ROOTFS  0x00004000  /* identifies the root filesystem */
-    printf("setting v_flag to 0x%x\n", v_flag & 0xFFFFBFFE);
-    pid_t springpid = findPidOfProcess("SpringBoard");
-    printf("Found SpringBoard's PID %i\n",springpid); // No longer neeeded because Jonathan added reSpring();
-    // Beginning of the part I am still developing. There has to be a better way. I am still not able to start dropbear
-    moveFileFromAppDir("tar","/tar");
-    moveFileFromAppDir("netcat","/netcat");
-    moveFileFromAppDir("sh","/sh");
-    moveFileFromAppDir("bash","/bash");
-    moveFileFromAppDir("binpack64-256.tar","/binpack64-256.tar");
-    moveFileFromAppDir("dropbear.plist","/Library/LaunchDaemons/");
-    moveFileFromAppDir("0.reload.plist","/Library/LaunchDaemons/");
-    chmod("/Library/LaunchDaemons/0.reload.plist", 0644);
-    chown("/Library/LaunchDaemons/0.reload.plist", 0, 0);
-    chmod("/Library/LaunchDaemons/dropbear.plist", 0644);
-    chown("/Library/LaunchDaemons/dropbear.plist", 0, 0);
+
+int yolo(){
+    unlink("/jb");
+    unlink("/jb/bin/bash");
+    unlink("/jb/tar");
+    mkdir("/jb", 0755);
+    mkdir("/jb/Library", 0755);
+    mkdir("/jb/Library/LaunchDaemons", 0755);
+    moveFileFromAppDir("tar","/jb/tar");
+    moveFileFromAppDir("sh","/jb/sh");
+    moveFileFromAppDir("bash","/jb/bin/bash");
+    moveFileFromAppDir("binpack64-256.tar","/jb/binpack64-256.tar");
     chmod("/private", 0777);
     chmod("/private/var", 0777);
     chmod("/private/var/mobile", 0777);
     chmod("/private/var/mobile/Library", 0777);
     chmod("/private/var/mobile/Library/Preferences", 0777);
-    chmod("/tar", 0755);
-    chmod("/binpack64-256.tar", 0755);
-    chmod("/netcat", 0755);
-    chmod("/sh", 0755);
-    chmod("/bash", 0755);
-    execCommand("/tar","-C","/","-xvf","binpack64-256.tar",0, 0);
-    pid_t pid;
-    pid_t pd = 0;
-    posix_spawn(&pid, "/bin/launchctl", 0, 0, (char**)&(const char*[]){"/bin/launchctl", "load", "/Library/LaunchDaemons/0.reload.plist", NULL}, NULL);
-    launjctlLaunchdPlist("/Library/LaunchDaemons/dropbear.plist");
-    posix_spawn(&pd, "/usr/bin/uicache", 0, 0, (char**)&(const char*[]){"/usr/bin/uicache", NULL}, NULL);
-    // End of part that needs major changes.
+    chmod("/jb/tar", 0755);
+    chmod("/jb/binpack64-256.tar", 0755);
+    chmod("/jb/netcat", 0755);
+    chmod("/jb/dropbear", 0755);
+    chmod("/jb/sh", 0755);
+    chmod("/jb/bin/bash", 0755);
+    int rc = 0;
+    rc = rootifyMe(); //We out here
+    rc = execCommand("/jb/tar","-C","/jb","-xvf","/jb/binpack64-256.tar",0, 0);
     return 0;
 }
+

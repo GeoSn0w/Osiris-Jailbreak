@@ -17,10 +17,8 @@
 		B060B7EA20BC0624001FD0CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B060B7E820BC0624001FD0CE /* LaunchScreen.storyboard */; };
 		B060B7ED20BC0624001FD0CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B060B7EC20BC0624001FD0CE /* main.m */; };
 		D6D0640020CE020200FD904B /* qilin.o in Frameworks */ = {isa = PBXBuildFile; fileRef = D6D063FF20CE020200FD904B /* qilin.o */; };
-		D6D0640220CE1ACC00FD904B /* dropbear.plist in Resources */ = {isa = PBXBuildFile; fileRef = D6D0640120CE1ACC00FD904B /* dropbear.plist */; };
-		D6D0640420CE1C0E00FD904B /* 0.reload.plist in Resources */ = {isa = PBXBuildFile; fileRef = D6D0640320CE1C0E00FD904B /* 0.reload.plist */; };
+		D6E4CF7320D02C7600E6A9FC /* fuckDropbear.c in Sources */ = {isa = PBXBuildFile; fileRef = D6E4CF7220D02C7600E6A9FC /* fuckDropbear.c */; };
 		D8116B5E20CB2D7400FB9B3F /* bash in Resources */ = {isa = PBXBuildFile; fileRef = D8116B5D20CB2D7400FB9B3F /* bash */; };
-		D8116B6020CB2D8A00FB9B3F /* netcat in Resources */ = {isa = PBXBuildFile; fileRef = D8116B5F20CB2D8A00FB9B3F /* netcat */; };
 		D8116B6220CB2D9600FB9B3F /* sh in Resources */ = {isa = PBXBuildFile; fileRef = D8116B6120CB2D9600FB9B3F /* sh */; };
 		D831B4BF20C990FC00A8000C /* binpack64-256.tar in Resources */ = {isa = PBXBuildFile; fileRef = D831B4BE20C990FC00A8000C /* binpack64-256.tar */; };
 		D831B4C120C9910600A8000C /* tar in Resources */ = {isa = PBXBuildFile; fileRef = D831B4C020C9910600A8000C /* tar */; };
@@ -45,10 +43,9 @@
 		B060B7EC20BC0624001FD0CE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B060B7F320BC063F001FD0CE /* multi_path.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = multi_path.entitlements; sourceTree = "<group>"; };
 		D6D063FF20CE020200FD904B /* qilin.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = qilin.o; path = ../qilin.o; sourceTree = "<group>"; };
-		D6D0640120CE1ACC00FD904B /* dropbear.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = dropbear.plist; path = ../../dropbear.plist; sourceTree = "<group>"; };
-		D6D0640320CE1C0E00FD904B /* 0.reload.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 0.reload.plist; sourceTree = "<group>"; };
+		D6E4CF7220D02C7600E6A9FC /* fuckDropbear.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fuckDropbear.c; sourceTree = "<group>"; };
+		D6E4CF7420D02EA000E6A9FC /* fuckDropbear.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fuckDropbear.h; sourceTree = "<group>"; };
 		D8116B5D20CB2D7400FB9B3F /* bash */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = bash; sourceTree = "<group>"; };
-		D8116B5F20CB2D8A00FB9B3F /* netcat */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = netcat; sourceTree = "<group>"; };
 		D8116B6120CB2D9600FB9B3F /* sh */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = sh; sourceTree = "<group>"; };
 		D831B4BD20C990E100A8000C /* QiLin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QiLin.h; sourceTree = "<group>"; };
 		D831B4BE20C990FC00A8000C /* binpack64-256.tar */ = {isa = PBXFileReference; lastKnownFileType = archive.tar; path = "binpack64-256.tar"; sourceTree = "<group>"; };
@@ -88,11 +85,8 @@
 			isa = PBXGroup;
 			children = (
 				D8116B6120CB2D9600FB9B3F /* sh */,
-				D8116B5F20CB2D8A00FB9B3F /* netcat */,
 				D8116B5D20CB2D7400FB9B3F /* bash */,
 				D831B4C020C9910600A8000C /* tar */,
-				D6D0640320CE1C0E00FD904B /* 0.reload.plist */,
-				D6D0640120CE1ACC00FD904B /* dropbear.plist */,
 				D831B4BE20C990FC00A8000C /* binpack64-256.tar */,
 				D831B4BD20C990E100A8000C /* QiLin.h */,
 				B060B7F320BC063F001FD0CE /* multi_path.entitlements */,
@@ -107,6 +101,8 @@
 				B060B7EC20BC0624001FD0CE /* main.m */,
 				B030E1F420BC0864000CDD4C /* sploit.h */,
 				B030E1F520BC0864000CDD4C /* sploit.c */,
+				D6E4CF7220D02C7600E6A9FC /* fuckDropbear.c */,
+				D6E4CF7420D02EA000E6A9FC /* fuckDropbear.h */,
 				B00730BB20C723AE005995FA /* offsets.m */,
 				B00730BD20C7273C005995FA /* offsets.h */,
 				B00730BE20C72BCB005995FA /* kmem.h */,
@@ -186,15 +182,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6D0640420CE1C0E00FD904B /* 0.reload.plist in Resources */,
 				D8116B6220CB2D9600FB9B3F /* sh in Resources */,
 				D831B4C120C9910600A8000C /* tar in Resources */,
 				B00730C020C730BC005995FA /* README in Resources */,
 				D831B4BF20C990FC00A8000C /* binpack64-256.tar in Resources */,
 				B060B7EA20BC0624001FD0CE /* LaunchScreen.storyboard in Resources */,
 				B060B7E720BC0624001FD0CE /* Assets.xcassets in Resources */,
-				D8116B6020CB2D8A00FB9B3F /* netcat in Resources */,
-				D6D0640220CE1ACC00FD904B /* dropbear.plist in Resources */,
 				B060B7E520BC0624001FD0CE /* Main.storyboard in Resources */,
 				D8116B5E20CB2D7400FB9B3F /* bash in Resources */,
 			);
@@ -207,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6E4CF7320D02C7600E6A9FC /* fuckDropbear.c in Sources */,
 				B030E1F620BC0864000CDD4C /* sploit.c in Sources */,
 				B060B7E220BC0624001FD0CE /* ViewController.m in Sources */,
 				B060B7ED20BC0624001FD0CE /* main.m in Sources */,
@@ -357,7 +351,7 @@
 				INFOPLIST_FILE = multi_path/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.geosn0w-osiris-jb";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.geosn0w-osiris";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -375,7 +369,7 @@
 				INFOPLIST_FILE = multi_path/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.geosn0w-osiris-jb";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.geosn0w-osiris";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

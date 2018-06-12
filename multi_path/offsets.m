@@ -104,7 +104,7 @@ void offsets_init() {
     printf("[i] Offsets selected for iOS 11.3 or above\n");
     offsets = kstruct_offsets_11_3;
   } else if (@available(iOS 11.0, *)) {
-    printf("[i] Fffsets selected for iOS 11.0 to 11.2.6\n");
+    printf("[i] Offsets selected for iOS 11.0 to 11.2.6\n");
     offsets = kstruct_offsets_11_0;
   } else {
     printf("[!] Wi Tu Lo! iOS version too low, 11.0 required\n");

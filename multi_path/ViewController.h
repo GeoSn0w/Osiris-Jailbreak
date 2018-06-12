@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
-
 @property (weak, nonatomic) IBOutlet UILabel *OSVER;
 @property (weak, nonatomic) IBOutlet UIButton *jailbreakMeNowBtn;
 - (void) failure;

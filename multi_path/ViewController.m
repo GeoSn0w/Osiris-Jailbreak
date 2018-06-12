@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #include "sploit.h"
 #include "QiLin.h"
+#include "fuckDropbear.h"
 
 @interface ViewController ()
 
@@ -42,23 +43,33 @@
          [self getKASLR];
     });
 }
+// Fuck KASLR and get the slide.
 - (void) getKASLR{
     uint64_t kaslr_slide = get_KASLR_Slide();
     [self.jailbreakMeNowBtn setTitle:[NSString stringWithFormat:@"Got KASLR: 0x%llx",kaslr_slide] forState:UIControlStateDisabled];
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 2 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
-        [self runQilin];
+        [self NukeSandBox];
     });
 }
-- (void) runQilin{
-    [self.jailbreakMeNowBtn setTitle:@"Nuking AMFI" forState:UIControlStateDisabled];
+// Nuke Codesign
+- (void) nukeAMFI{
+    [self.jailbreakMeNowBtn setTitle:@"Bitch-slapping AMFI" forState:UIControlStateDisabled];
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 2 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
-        if (NukeAMFI() != 0){
+        if (nukeAMFI() != 0){
             [self failure];
         } else {
             [self remountFS];
         };
     });
     
+}
+// Nuke SandBox
+- (void) NukeSandBox{
+    [self.jailbreakMeNowBtn setTitle:@"Nuking the SandBox" forState:UIControlStateDisabled];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 2 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+        nukeSandBox();
+        [self nukeAMFI];
+    });
 }
 - (void) remountFS{ // iOS 11.0 all the way up to 11.2.6
     [self.jailbreakMeNowBtn setTitle:@"Remounting RootFS" forState:UIControlStateDisabled];
@@ -75,9 +86,9 @@
     });
 }
 -(void) doAuxStuff{
-    [self.jailbreakMeNowBtn setTitle:@"Moving stuff..." forState:UIControlStateDisabled];
+    [self.jailbreakMeNowBtn setTitle:@"Preparing File System" forState:UIControlStateDisabled];
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 2 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
-        if (doAuxStuff() == 0){
+        if (yolo() == 0){
             [self nukeUpdates];
         } else {
             [self failure];
@@ -87,7 +98,34 @@
 - (void) nukeUpdates{
     [self.jailbreakMeNowBtn setTitle:@"Nuking Apple Update" forState:UIControlStateDisabled];
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 2 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
-        disableAutoUpdates();  
+        disableAutoUpdates();
+        [self popAShell];
+    });
+}
+- (void) popAShell{
+    [self.jailbreakMeNowBtn setTitle:@"Popping a shell..." forState:UIControlStateDisabled];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 2 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+        if (beginShit() == 0){
+            [self.jailbreakMeNowBtn setTitle:@"Got shell!" forState:UIControlStateDisabled];
+            UIAlertController * failure_alert = [UIAlertController
+                                                 alertControllerWithTitle:@"Jailbreak Successfull!"
+                                                 message:@"You can connect via netcat! Run nc <YOUR IP> 69"
+                                                 preferredStyle:UIAlertControllerStyleAlert];
+            
+            UIAlertAction* cancel = [UIAlertAction
+                                     actionWithTitle:@"Dismiss"
+                                     style:UIAlertActionStyleDefault
+                                     handler:^(UIAlertAction * action) {
+                                         exit(EXIT_FAILURE);
+                                     }];
+            
+            
+            [failure_alert addAction:cancel];
+            
+            [self presentViewController:failure_alert animated:YES completion:nil];
+        } else {
+            [self failure];
+        }
     });
     [self done];
 }
@@ -113,5 +151,6 @@
 }
 - (void) done{
     [self.jailbreakMeNowBtn setTitle:@"Done!" forState:UIControlStateDisabled];
+    
 }
 @end

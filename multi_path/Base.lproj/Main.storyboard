@@ -55,7 +55,7 @@
                     </view>
                     <connections>
                         <outlet property="OSVER" destination="KvR-s1-o7H" id="9vy-l0-Qsz"/>
-                        <outlet property="jailbreakMeNowBtn" destination="V08-hn-OGv" id="Qec-8t-LvD"/>
+                        <outlet property="jailbreakMeNowBtn" destination="V08-hn-OGv" id="SHY-wE-SS5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
