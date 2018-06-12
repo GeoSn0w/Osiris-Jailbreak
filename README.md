@@ -13,7 +13,7 @@ This jailbreak is under development and in no way whatsoever intended for genera
 
 
 ### Curent Development (Help needed)
--> Test on iOS 11.2.1 iPod Touch 6th Generation and iPhone 6 iOS 11.3.1
+-> Tested on iOS 11.2.1 iPod Touch 6th Generation and iPhone 6 iOS 11.3.1
 
 May take multiple attempts for the exploit to run properly.
 
