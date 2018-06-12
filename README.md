@@ -1,9 +1,11 @@
 # Osiris-Jailbreak
 An incomplete iOS 11.2 -> iOS 11.3.1 Jailbreak by GeoSn0w (@FCE365) using multi_path (CVE-2018-4241) by Ian Beer and #QiLin by Jonathan Levin.
 
-This jailbreak is under development and in no way whatsoever intended for general public usage. Please don't run this jailbreak onyour device until I finish it as it has the potential to mess stuff up. If you're an average iOS user, please stick with Electra Jailbreak. It is safer and more stable. This is my firt public jailbreak and I am doing it just for learning purposes.
+This jailbreak is under development and in no way whatsoever intended for general public usage. Please don't run this jailbreak on your device until I finish it as it has the potential to mess stuff up. If you're an average iOS user, please stick with Electra Jailbreak. It is safer and more stable. This is my first public jailbreak and I am doing it just for learning purposes.
 
-<center> Sideloading iOS apps with Xcode is sooo 2̶0̶1̶5̶ 2018 (multi_path) </center>
+
+<p align="center"> Sideloading iOS apps with Xcode is sooo ~~2015~~ 2018 (multi_path) </p>
+
 
 ### Curent Development
 -> Test on iOS 11.2.1 iPod Touch 6th Generation and iPhone 6 iOS 11.3.1
@@ -16,7 +18,7 @@ What works:
     <li> Contains Jonathan Levin's binpack for 64-Bit and drops it. <-- Could be improved. </li>
 </ul>
 
-What doesn't work:
+### What doesn't work:
 <ul>
   <li> Has no Cydia and I doubt I'll even bother with the current status Cydia's in. </li>
   <li> No Substrate. </li>
@@ -29,10 +31,14 @@ What doesn't work:
   <li> THIS DOES NEED APPLE DEVELOPER ACCOUNT (Necause of the Multi Path entitlement used in multi_path).</li>
   <li> I will swap the mtcp exploit with vfs once Ian Beer drops it. </li>
   <li> THIS COMES "AS-IS". NO FORTHER SUPPORT SHOULD BE EXPECTED OR WILL BE GIVEN. USE AT YOUR OWN RISK!
+</ul>
 
-New Team Members:
-The following developers to which I am thankful, agreed to help me with this
+### New Team Members:
+The following developers to which I am thankful agreed to help me with this
 <ul>
   <li> https://twitter.com/auxiliumdev </li>
   <li> https://twitter.com/MidnightChip </li>
  </ul>
+ 
+### Contact me
+GeoSn0w (@FCE365): https://twitter.com/FCE365
