@@ -4,7 +4,7 @@ An incomplete iOS 11.2 -> iOS 11.3.1 Jailbreak by GeoSn0w (@FCE365) using multi_
 This jailbreak is under development and in no way whatsoever intended for general public usage. Please don't run this jailbreak on your device until I finish it as it has the potential to mess stuff up. If you're an average iOS user, please stick with Electra Jailbreak. It is safer and more stable. This is my first public jailbreak and I am doing it just for learning purposes.
 
 
-<p align="center"> Sideloading iOS apps with Xcode is sooo ~~2015~~ 2018 (multi_path) </p>
+<p align="center"> Sideloading iOS apps with Xcode is sooo <s>2015</s> 2018 (multi_path) </p>
 
 
 ### Curent Development
