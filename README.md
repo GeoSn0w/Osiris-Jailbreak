@@ -17,6 +17,11 @@ This jailbreak is under development and in no way whatsoever intended for genera
 
 May take multiple attempts for the exploit to run properly.
 
+### Update 1:
+<ul>
+  <li>Big improvements to the code base.</li>
+  <li>Can now pop a remote shell. Feel free to run commands.</li>
+  </ul>
 ### What works:
 <ul>
 <li> Properly runs the exploit and grants QiLin SEND right to the Kernel task_port (aka tfp0). </li>
@@ -25,6 +30,7 @@ May take multiple attempts for the exploit to run properly.
   <li> Successfully remounts the ROOTFS as R/W on iOS 11.2.6 and lower. Waiting for QiLin to be updated soon for iOS 11.3.x </li>
     <li> Contains Jonathan Levin's binpack for 64-Bit and drops it. <-- Could be improved. </li>
       <li> Disables iOS Updates (iOS 11.2.6 and older) </li>
+  <li> Gets you remote terminal to run commands using netcat. `nc <your phone's IP> 69` </li>
 </ul>
 
 ### What doesn't work:
