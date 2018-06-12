@@ -41,6 +41,10 @@ May take multiple attempts for the exploit to run properly.
   <li> THIS COMES "AS-IS". NO FURTHER SUPPORT SHOULD BE EXPECTED OR WILL BE GIVEN. USE AT YOUR OWN RISK! I AM NOT RESPONSIBLE IF IT FUCKS YOUR DEVICE! </li>
 </ul>
 
+### Updates:
+I'll be posting updates on the progress on my Twitter (@FCE365) and my iOS Channel:
+https://www.youtube.com/fce365official
+
 ### New Team Members:
 The following developers to whom I am thankful agreed to help me with this
 <ul>
