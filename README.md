@@ -38,7 +38,7 @@ May take multiple attempts for the exploit to run properly.
  <ul>
   <li> THIS DOES NEED APPLE DEVELOPER ACCOUNT (Because of the Multi Path entitlement used in multi_path).</li>
   <li> I will swap the mtcp exploit with vfs once Ian Beer drops it. </li>
-  <li> THIS COMES "AS-IS". NO FURTHER SUPPORT SHOULD BE EXPECTED OR WILL BE GIVEN. USE AT YOUR OWN RISK!
+  <li> THIS COMES "AS-IS". NO FURTHER SUPPORT SHOULD BE EXPECTED OR WILL BE GIVEN. USE AT YOUR OWN RISK! I AM NOT RESPONSIBLE IF IT FUCKS YOUR DEVICE! </li>
 </ul>
 
 ### New Team Members:
@@ -50,3 +50,9 @@ The following developers to which I am thankful agreed to help me with this
  
 ### Contact me
 GeoSn0w (@FCE365): https://twitter.com/FCE365
+
+### References
+<ul>
+  <li> QiLin: http://newosxbook.com/QiLin/ </li>
+    <li> multi_path: https://bugs.chromium.org/p/project-zero/issues/detail?id=1558 </li>
+  </ul>
