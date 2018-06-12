@@ -42,7 +42,7 @@ May take multiple attempts for the exploit to run properly.
 </ul>
 
 ### New Team Members:
-The following developers to which I am thankful agreed to help me with this
+The following developers to whom I am thankful agreed to help me with this
 <ul>
   <li> https://twitter.com/auxiliumdev </li>
   <li> https://twitter.com/MidnightChip </li>
