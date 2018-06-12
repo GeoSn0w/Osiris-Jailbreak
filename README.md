@@ -7,7 +7,7 @@ This jailbreak is under development and in no way whatsoever intended for genera
 <p align="center"> Sideloading iOS apps with Xcode is sooo <s>2015</s> 2018 (multi_path) </p>
 
 
-### Curent Development
+### Curent Development (Help needed)
 -> Test on iOS 11.2.1 iPod Touch 6th Generation and iPhone 6 iOS 11.3.1
 
 ### What works:
