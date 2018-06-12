@@ -62,6 +62,18 @@ The following developers to whom I am thankful agreed to help me with this
 ### Contact me
 GeoSn0w (@FCE365): https://twitter.com/FCE365
 
+### Nickname etymology 
+<b>GeoSn0w</b>
+
+Geo - Represents short for "George", my real name.
+
+Sn0w - A common suffix used by developers in the pre-iOS 7 Jailbreak community for their utilities or their nicknames. It is almost like a magic from a header, helping someone to place you in the right category by your nickname alone (iOS Development / Jailbreaking).
+
+### Disambiguation
+Some people believe I took `geo` from a famous iOS Hacker, George Hotz who goes by the name `geohot`. It is not true. As explained previously, `geo` is short for George. It just happens both me and Hotz have the same name. 
+
+Others believe I took `Sn0w` from another iOS developer, `iH8Sn0w`. Again, untrue. He took it from the same place I took it, where it was originally used: `UltraSn0w` - an iOS unlock payload from back in the days
+
 ### References
 <ul>
   <li> QiLin: http://newosxbook.com/QiLin/ </li>
