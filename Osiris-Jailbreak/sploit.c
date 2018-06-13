@@ -2,7 +2,7 @@
 //  Osiris Jailbreak
 //  iOS 11.2 - 11.3.1
 //  Created by GeoSn0w on 5/10/18.
-//  Big thanks to Ian Beer for Osiris-Jailbreak exploit and Jonathan Levin for QiLin!
+//  Big thanks to Ian Beer for multi_path exploit and Jonathan Levin for QiLin!
 //
 //
 #include <sys/resource.h>
@@ -1124,7 +1124,7 @@ int exploit() {
   printf("[i] OSIRIS Jailbreak Initialized.\n");
   printf("by GeoSn0w (@FCE365)\n");
   printf("Thanks to Ian Beer, Jonathan Levin and Hacker Fantastic\n");
-  printf("[i] Initializing Osiris-Jailbreak exploit by Ian Beer!.\n");
+  printf("[i] Initializing multi_path exploit by Ian Beer!.\n");
   offsets_init();
   increase_limits();
   int target_socks[2] = {0};

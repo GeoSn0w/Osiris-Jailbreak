@@ -1,4 +1,4 @@
-Osiris-Jailbreak - exploit for p0 issue 1558 (CVE-2018-4241)
+multi_path - exploit for p0 issue 1558 (CVE-2018-4241)
 @i41nbeer
 
 mptcp_usr_connectx is the handler for the connectx syscall for the AP_MULTIPATH socket family.
