@@ -4,12 +4,12 @@
 <B> ONLY FOR DEVELOPERS! </B>
 </p>
 
-An incomplete iOS 11.2 -> iOS 11.3.1 Jailbreak by GeoSn0w (@FCE365) using multi_path (CVE-2018-4241) by Ian Beer and #QiLin by Jonathan Levin.
+An incomplete iOS 11.2 -> iOS 11.3.1 Jailbreak by GeoSn0w (@FCE365) using Osiris-Jailbreak (CVE-2018-4241) by Ian Beer and #QiLin by Jonathan Levin.
 
 This jailbreak is under development and in no way whatsoever intended for general public usage. Please don't run this jailbreak on your device until I finish it as it has the potential to mess stuff up. If you're an average iOS user, please stick with Electra Jailbreak. It is safer and more stable. This is my first public jailbreak and I am doing it just for learning purposes.
 
 
-<p align="center"> Sideloading iOS apps with Xcode is sooo <s>2015</s> 2018 (multi_path) </p>
+<p align="center"> Sideloading iOS apps with Xcode is sooo <s>2015</s> 2018 (Osiris-Jailbreak) </p>
 
 
 ### Curent Development (Help needed)
@@ -43,7 +43,7 @@ May take multiple attempts for the exploit to run properly.
  
  Just in case it isn't clear for everyone yet:
  <ul>
-  <li> THIS DOES NEED APPLE DEVELOPER ACCOUNT (Because of the Multi Path entitlement used in multi_path).</li>
+  <li> THIS DOES NEED APPLE DEVELOPER ACCOUNT (Because of the Multi Path entitlement used in Osiris-Jailbreak).</li>
   <li> I will swap the mtcp exploit with vfs once Ian Beer drops it. </li>
   <li> THIS COMES "AS-IS". NO FURTHER SUPPORT SHOULD BE EXPECTED OR WILL BE GIVEN. USE AT YOUR OWN RISK! I AM NOT RESPONSIBLE IF IT FUCKS YOUR DEVICE! </li>
 </ul>
@@ -77,5 +77,5 @@ Others believe I took `Sn0w` from another iOS developer, `iH8Sn0w`. Again, untru
 ### References
 <ul>
   <li> QiLin: http://newosxbook.com/QiLin/ </li>
-    <li> multi_path: https://bugs.chromium.org/p/project-zero/issues/detail?id=1558 </li>
+    <li> Osiris-Jailbreak: https://bugs.chromium.org/p/project-zero/issues/detail?id=1558 </li>
   </ul>
