@@ -17,6 +17,13 @@ This jailbreak is under development and in no way whatsoever intended for genera
 
 May take multiple attempts for the exploit to run properly.
 
+### Update 2:
+<ul>
+  <li>Big improvements to the code base.</li>
+  <li>Swapped the exploit with the easy_list one. No more dev account.</li>
+  <li>Got its own website</li>
+  </ul>
+  
 ### Update 1:
 <ul>
   <li>Big improvements to the code base.</li>
@@ -43,8 +50,6 @@ May take multiple attempts for the exploit to run properly.
  
  Just in case it isn't clear for everyone yet:
  <ul>
-  <li> THIS DOES NEED APPLE DEVELOPER ACCOUNT (Because of the Multi Path entitlement used in multi_path).</li>
-  <li> I will swap the mtcp exploit with vfs once Ian Beer drops it. </li>
   <li> THIS COMES "AS-IS". NO FURTHER SUPPORT SHOULD BE EXPECTED OR WILL BE GIVEN. USE AT YOUR OWN RISK! I AM NOT RESPONSIBLE IF IT FUCKS YOUR DEVICE! </li>
 </ul>
 
