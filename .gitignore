@@ -53,3 +53,7 @@ dkms.conf
 
 # bogus macOS hidden files
 *.DS_Store
+
+# bogus Xcode files
+multi_path.xcodeproj/xcuserdata/capin.xcuserdatad/
+multi_path.xcodeproj/project.xcworkspace/xcuserdata/capin.xcuserdatad/
