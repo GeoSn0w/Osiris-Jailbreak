@@ -3,6 +3,7 @@
 
 # Object files
 *.o
+!qilin.o
 *.ko
 *.obj
 *.elf

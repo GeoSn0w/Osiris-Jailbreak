@@ -61,7 +61,7 @@
 		D6D97C7120D1C6000038FDAE /* binpack64-256.tar */ = {isa = PBXFileReference; lastKnownFileType = archive.tar; path = "binpack64-256.tar"; sourceTree = "<group>"; };
 		D6D97C7220D1C6000038FDAE /* fuckDropbear.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fuckDropbear.h; sourceTree = "<group>"; };
 		D6D97C7820D1C6050038FDAE /* amfidebilitate */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = amfidebilitate; sourceTree = "<group>"; };
-		D6D97C7B20D1CB3C0038FDAE /* qilin.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = qilin.o; path = ../../Desktop/qilin.o; sourceTree = "<group>"; };
+		D6D97C7B20D1CB3C0038FDAE /* qilin.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = qilin.o; path = empty_list/qilin.o; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
