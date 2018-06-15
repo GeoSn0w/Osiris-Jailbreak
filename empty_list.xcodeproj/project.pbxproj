@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ABF1322E20D3C8FC005679C0 /* RemountFunc.c in Sources */ = {isa = PBXBuildFile; fileRef = ABF1322D20D3C8FC005679C0 /* RemountFunc.c */; };
 		B026DA7620CE95FE002379D3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B026DA7520CE95FE002379D3 /* AppDelegate.m */; };
 		B026DA7920CE95FE002379D3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B026DA7820CE95FE002379D3 /* ViewController.m */; };
 		B026DA7C20CE95FE002379D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B026DA7A20CE95FE002379D3 /* Main.storyboard */; };
@@ -30,6 +31,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ABF1322C20D3C8FC005679C0 /* RemountFunc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RemountFunc.h; sourceTree = "<group>"; };
+		ABF1322D20D3C8FC005679C0 /* RemountFunc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = RemountFunc.c; sourceTree = "<group>"; };
 		B026DA7120CE95FE002379D3 /* empty_list.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = empty_list.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B026DA7420CE95FE002379D3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B026DA7520CE95FE002379D3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -76,6 +79,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ABF1322B20D3C8E9005679C0 /* RemountFunc */ = {
+			isa = PBXGroup;
+			children = (
+				ABF1322C20D3C8FC005679C0 /* RemountFunc.h */,
+				ABF1322D20D3C8FC005679C0 /* RemountFunc.c */,
+			);
+			name = RemountFunc;
+			sourceTree = "<group>";
+		};
 		B026DA6820CE95FE002379D3 = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +108,7 @@
 		B026DA7320CE95FE002379D3 /* empty_list */ = {
 			isa = PBXGroup;
 			children = (
+				ABF1322B20D3C8E9005679C0 /* RemountFunc */,
 				B026DA8220CE9600002379D3 /* Info.plist */,
 				D697934A20D2F2170017137E /* binSkillz */,
 				D697934920D2F1FE0017137E /* Yolo */,
@@ -261,6 +274,7 @@
 				B026DA7920CE95FE002379D3 /* ViewController.m in Sources */,
 				D6D97C6820D1BFCD0038FDAE /* patchfinder64.m in Sources */,
 				D6D97C6420D1BF2D0038FDAE /* kern_utils.m in Sources */,
+				ABF1322E20D3C8FC005679C0 /* RemountFunc.c in Sources */,
 				D6D97C7520D1C6000038FDAE /* fuckDropbear.c in Sources */,
 				B026DA8420CE9600002379D3 /* main.m in Sources */,
 				B026DA7620CE95FE002379D3 /* AppDelegate.m in Sources */,
@@ -403,8 +417,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 52V643YS6P;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 6QMCVMKW7Q;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = empty_list/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -412,8 +426,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.geosn0w.osiris;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lakr.JBssh;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "bc693ddc-4324-4f2b-aa05-d23df5c104f7";
+				PROVISIONING_PROFILE_SPECIFIER = JBssh;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -422,8 +438,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 52V643YS6P;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 6QMCVMKW7Q;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = empty_list/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -431,8 +447,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.geosn0w.osiris;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lakr.JBssh;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "bc693ddc-4324-4f2b-aa05-d23df5c104f7";
+				PROVISIONING_PROFILE_SPECIFIER = JBssh;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

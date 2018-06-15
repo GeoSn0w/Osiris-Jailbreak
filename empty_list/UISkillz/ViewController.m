@@ -34,8 +34,8 @@ uint64_t kaslr_slide;
 - (IBAction)jailbreakMeNowBtn:(id)sender {
     if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 11.3) {
         UIAlertController * failure_alert = [UIAlertController
-                                             alertControllerWithTitle:@"You are running iOS 11.3.x!"
-                                             message:@"The remount doesn't currently work on iOS 11.3.x! Working on it!"
+                                             alertControllerWithTitle:@"Exit this app if you are not a developer."
+                                             message:@"The remount doesn't currently work on iOS 11.3.x! But will try do it if you like."
                                              preferredStyle:UIAlertControllerStyleAlert];
         
         UIAlertAction* cancel = [UIAlertAction
@@ -43,11 +43,23 @@ uint64_t kaslr_slide;
                                  style:UIAlertActionStyleDefault
                                  handler:^(UIAlertAction * action) {
                                      exit(EXIT_FAILURE);
+                                     
                                  }];
         
-         [failure_alert addAction:cancel];
-         [self presentViewController:failure_alert animated:YES completion:nil];
-         [self failure];
+        UIAlertAction* accept = [UIAlertAction
+                                 actionWithTitle:@"Do it." style:UIAlertActionStyleCancel handler:^(UIAlertAction * action) {
+                                     self.jailbreakMeNowBtn.enabled = NO;
+                                     [self.jailbreakMeNowBtn setTitle:@"Pwning the device..." forState:UIControlStateDisabled];
+                                     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 2 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+                                         runSploit();
+                                         [self get_tfp0];
+                                     });
+                                 }];
+        
+        [failure_alert addAction:cancel];
+        [failure_alert addAction:accept];
+        [self presentViewController:failure_alert animated:YES completion:nil];
+        //[self failure];
     } else {
         self.jailbreakMeNowBtn.enabled = NO;
         [self.jailbreakMeNowBtn setTitle:@"Pwning the device..." forState:UIControlStateDisabled];

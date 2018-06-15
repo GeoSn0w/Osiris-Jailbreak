@@ -17,6 +17,9 @@
 #include "fuckDropbear.h"
 #include "kern_utils.h"
 #include "sploit.h"
+
+#include "RemountFunc.h"
+
 uint64_t kernel_base, kslide;
 mach_port_t realtfp0;
 uint64_t find_kernel_base(void);
@@ -1151,7 +1154,8 @@ int nukeAMFI(){
     sleep(1);
     printf("[i] Nuking AMFID...\n");
     int amfid = castrateAmfid();
-    remountRootFS();
+    RemountMain();
+    //remountRootFS();
     return 0;
 }
 uint64_t get_KASLR_Slide(){
