@@ -4,19 +4,19 @@
 <B> ONLY FOR DEVELOPERS! </B>
 </p>
 
-An incomplete iOS 11.2 -> iOS 11.3.1 Jailbreak by GeoSn0w (@FCE365) using multi_path (CVE-2018-4241) by Ian Beer and #QiLin by Jonathan Levin.
+An incomplete iOS 11.2 -> iOS 11.3.1 Jailbreak by GeoSn0w (@FCE365) using empty_list (CVE-2018-4243) by Ian Beer and #QiLin by Jonathan Levin.
 
 This jailbreak is under development and in no way whatsoever intended for general public usage. Please don't run this jailbreak on your device until I finish it as it has the potential to mess stuff up. If you're an average iOS user, please stick with Electra Jailbreak. It is safer and more stable. This is my first public jailbreak and I am doing it just for learning purposes.
 
 ### Curent Development (Help needed)
 -> Tested on iOS 11.2.1 iPod Touch 6th Generation and iPhone 6 iOS 11.3.1
 
-May take multiple attempts for the exploit to run properly due to easy_list exploit being flaky.
+May take multiple attempts for the exploit to run properly due to empty_list exploit being flaky.
 
 ### Update 2:
 <ul>
   <li>Big improvements to the code base.</li>
-  <li>Swapped the exploit with the easy_list one. No more dev account.</li>
+  <li>Swapped the exploit with the empty_list one. No more dev account.</li>
   <li>Got its own website</li>
   </ul>
   
@@ -78,5 +78,6 @@ Others believe I took `Sn0w` from another iOS developer, `iH8Sn0w`. Again, untru
 ### References
 <ul>
   <li> QiLin: http://newosxbook.com/QiLin/ </li>
-    <li> multi_path: https://bugs.chromium.org/p/project-zero/issues/detail?id=1558 </li>
+    <li> multi_path (deprecated) : https://bugs.chromium.org/p/project-zero/issues/detail?id=1558 </li>
+    <li> empty_list : https://bugs.chromium.org/p/project-zero/issues/detail?id=1564 </li>
   </ul>
