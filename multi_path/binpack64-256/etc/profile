@@ -1,3 +1,0 @@
-export PS1='$USER@$HOST ($PWD)# '
-export PATH=/usr/bin:/bin:/sbin:/usr/sbin:/usr/local/bin
-
