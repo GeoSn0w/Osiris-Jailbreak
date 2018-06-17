@@ -11,12 +11,19 @@ This jailbreak is under development and in no way whatsoever intended for genera
 ### Curent Development (Help needed)
 -> Tested on iOS 11.2.1 iPod Touch 6th Generation and iPhone 6 iOS 11.3.1
 
-May take multiple attempts for the exploit to run properly due to easy_list exploit being flaky.
+May take a few attempts for the exploit to run properly.
+
+### Update 3:
+<ul>
+  <li>Swapped back to multi_path because emty_list is very unstable and this is a developer-only jailbreak anyways</li>
+  <li>FIXED DROPBEAR</li>
+  <li>FIXED UICACHE</li>
+</ul>
 
 ### Update 2:
 <ul>
   <li>Big improvements to the code base.</li>
-  <li>Swapped the exploit with the easy_list one. No more dev account.</li>
+  <li>Swapped the exploit with the empty_list one. No more dev account.</li>
   <li>Got its own website</li>
   </ul>
   
