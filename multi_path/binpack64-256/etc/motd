@@ -1,0 +1,25 @@
+************************************************************************************
+
+   To get the full binpack:  
+  
+     export PATH=$PATH:/jb/usr/bin:/jb/bin:/jb/sbin:/jb/usr/sbin:/jb/usr/local/bin:
+
+   You can easily and selectively move files to your system if you know what
+   you're doing (I'd start with [jb]/usr/share/terminfo)
+
+   I was hoping to support Cydia, but after reaching out to Jay Freeman over various
+   media, all I got was condescending slam on reddit. Therefore, get your Cydia supported
+   in some other jailbreak.
+
+   To spread the good karma: Please consider donating any amount to any charity
+                             of your choice, and hash-tag it #LiberiOS
+
+   Full writeup on how this works (and the QiLin Toolkit used in this jailbreak)
+	
+     http://NewOSXBook.com/QiLin/qilin.pdf
+   
+   To get rid of this message: rm /etc/motd :-(
+
+   To remove all traces of this JB: /jb/removeMe.sh
+
+************************************************************************************
