@@ -59,13 +59,6 @@ May take a few attempts for the exploit to run properly.
 ### Updates:
 I'll be posting updates on the progress on my Twitter (@FCE365) and my iOS Channel:
 https://www.youtube.com/fce365official
-
-### New Team Members:
-The following developers to whom I am thankful agreed to help me with this
-<ul>
-  <li> https://twitter.com/auxiliumdev </li>
-  <li> https://twitter.com/MidnightChip </li>
- </ul>
  
 ### Contact me
 GeoSn0w (@FCE365): https://twitter.com/FCE365
