@@ -3,21 +3,21 @@ MIT License
 Copyright (c) 2018 GeoSn0w
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), except the 
-entities mentioned in the Appendix 1, to deal in the Software without 
+of this software and associated documentation files (the "Software"), except
+the entities mentioned in the Appendix 1, to deal in the Software without
 restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
 furnished to do so, subject to the following conditions:
-
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
+
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER.
+LIABILITY, WHETHER IN AN ACTION OF A CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
@@ -26,5 +26,5 @@ Any IPA / iOS Application signing service like appdb, TweakBox, AppValley,
 Tutu or such is prohibited from uploading this application and serving it through their service.
 Also, bundling this application with any advertisement platform by these services is also prohibited.
 This is to prevent malware from being bundled with a legitimate jailbreak. Jailbreak tools use exploits 
-capable of disabling system security and can be dangerous if they're not taken from a trusted source, 
+capable of disabling system security and can be dangerous if they're not taken from a trusted source,
 which in my opinion, these signing services are not.
