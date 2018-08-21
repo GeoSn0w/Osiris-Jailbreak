@@ -1544,7 +1544,6 @@ int nukeAMFI(){
     sleep(3);
     sleep(1);
     sleep(1);
-    
     printf("[i] Drop Kicking AMFID...\n");
     int amfid = castrateAmfid();
     return 0;
@@ -1552,7 +1551,7 @@ int nukeAMFI(){
 uint64_t get_KASLR_Slide(){
     uint64_t kernel_base = dump_kernel(tfp0, 0xFFFFFFF0074c5d08);
     uint64_t kaslr = slide;
-    return kaslr; // I use this on the UI.
+    return kaslr; // lolwot?
 }
 uint tfp0_printout(){
     return tfp0; //Just return the task port. I use this on the UI.
