@@ -15,7 +15,7 @@ May take a few attempts for the exploit to run properly.
 
 ### Update 3:
 <ul>
-  <li>Swapped back to multi_path because emty_list is very unstable and this is a developer-only jailbreak anyways</li>
+  <li>Swapped back to multi_path because empty_list is very unstable and this is a developer-only jailbreak anyways</li>
   <li>FIXED DROPBEAR</li>
   <li>FIXED UICACHE</li>
 </ul>
