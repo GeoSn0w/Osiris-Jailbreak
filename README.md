@@ -6,7 +6,7 @@
 
 An incomplete iOS 11.2 -> iOS 11.3.1 Jailbreak by GeoSn0w (@FCE365) using multi_path (CVE-2018-4241) by Ian Beer and #QiLin by Jonathan Levin.
 
-This jailbreak is under development and in no way whatsoever intended for general public usage. Please don't run this jailbreak on your device until I finish it as it has the potential to mess stuff up. If you're an average iOS user, please stick with Electra Jailbreak. It is safer and more stable. This is my first public jailbreak, and I am doing it just for learning purposes.
+This jailbreak is under development and in no way whatsoever intended for general public usage. Please don't run this jailbreak on your device until I finish it as it has the potential to mess stuff up. If you're an average iOS user, please stick with Electra Jailbreak. It is safer and more stable. This is my first public jailbreak, and I am doing it just for learning purposes. Yes, this won't jailbreak your device in the true sense of the word.
 
 ### Current Development (Help needed)
 -> Tested on iOS 11.2.1 iPod Touch 6th Generation and iPhone 6 iOS 11.3.1
