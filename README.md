@@ -80,3 +80,9 @@ Others believe I took `Sn0w` from another iOS developer, `iH8Sn0w`. Again, untru
   <li> QiLin: http://newosxbook.com/QiLin/ </li>
     <li> multi_path: https://bugs.chromium.org/p/project-zero/issues/detail?id=1558 </li>
   </ul>
+  
+### My Websites
+* <a href="https://idevicecentral.com">Latest iOS 16 Jailbreak News</a>
+* <a href="https://gametutorialpro.com">Latest Gaming News & Guides</a>
+* <a href="https://jailbreak.fce365.info">iOS Jailbreak Forum</a>
+* <a href="https://gsmbypass.com">Latest FRP Bypass Tools & Guides</a>
